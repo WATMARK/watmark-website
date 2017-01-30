@@ -1,0 +1,144 @@
+/*
+*waw v1.0.0
+*Copyright 2016, Ivana De Alba
+*Free to use under Creative Commons
+*http://www.creativecommons.com/
+*27/04/2016
+*/
+
+/* Table of contents
+- Grid
+- Base Styles
+- Typography
+- links
+- Buttons
+- Forms
+- Lists
+- Tables
+- Media Queris
+- Clearing
+*/
+
+/*GRID
+____________________________________*/
+
+.container{
+	width: 100%;
+	max-width: 1680%;
+	margin: 0px;
+}
+
+.col{
+	width: 100&;
+	float: left;
+}
+
+.one.col{width: 8.3333333333%;}
+.two.col{width: 16.6666666667%;}
+.three.col{width: 25%;}
+.four.col{width: 33.3333333333%;}
+.five.col{width: 41.6666666667%;}
+.six.col{width: 50%;}
+.seven.col{width: 58.3333333333%;}
+.eight.col{width: 66.6666666667%;}
+.nine.col{width: 75%;}
+.ten.col{width: 83.3333333333%;}
+.eleven.col{width: 91.6666666667%;}
+.twelve.col{width: 100%;}
+
+/* BASE STYLES
+____________________________________*/
+
+body{
+	margin: 0px;
+}
+
+.borderG{
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.marginLRA{
+	margin: 0 auto;
+}
+.show{
+	display: block;
+}
+.showM{
+	display: none;
+}
+.showT{
+	display: none;
+}
+
+/* SELF CLEARING GOODNESS
+____________________________________*/
+
+.container:after,
+.row:after,
+.clear{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* MEDIA QUERIS
+____________________________________*/
+
+@media (max-width: 1023px) {
+
+	body{background-color: red;}
+
+	.one-m.col{width: 8.3333333333%;}
+	.two-m.col{width: 16.6666666667%;}
+	.three-m.col{width: 25%;}
+	.four-m.col{width: 33.3333333333%;}
+	.five-m.col{width: 41.6666666667%;}
+	.six-m.col{width: 50%;}
+	.seven-m.col{width: 58.3333333333%;}
+	.eight-m.col{width: 66.6666666667%;}
+	.nine-m.col{width: 75%;}
+	.ten-m.col{width: 83.3333333333%;}
+	.eleven-m.col{width: 91.6666666667%;}
+	.twelve-m.col{width: 100&;}
+
+	.show{
+		display: none;
+	}
+	.showT{
+		display: block;
+	}
+}
+
+@media (max-width: 767px) {
+
+	body{background-color: blue;}
+	
+	.one-s.col{width: 8.3333333333%;}
+	.two-s.col{width: 16.6666666667%;}
+	.three-s.col{width: 25%;}
+	.four-s.col{width: 33.3333333333%;}
+	.five-s.col{width: 41.6666666667%;}
+	.six-s.col{width: 50%;}
+	.seven-s.col{width: 58.3333333333%;}
+	.eight-s.col{width: 66.6666666667%;}
+	.nine-s.col{width: 75%;}
+	.ten-s.col{width: 83.3333333333%;}
+	.eleven-s.col{width: 91.6666666667%;}
+	.twelve-s.col{width: 100&;}
+
+	.show{
+		display: none;
+	}
+	.showT{
+		display: none;
+	}
+	.showM{
+		display: block;
+	}
+}
